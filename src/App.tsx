@@ -253,23 +253,27 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F7F7F7] font-sans text-[#333]">
-      {/* Header */}
-      <header className="sticky top-0 z-50 flex items-center bg-white px-4 py-3 border-b border-[#EEEEEE]">
-        {view !== 'home' && (
-          <button 
-            onClick={handleBack}
-            className="absolute left-4 p-1 hover:bg-gray-100 rounded-full transition-colors"
-          >
-            <ChevronLeft size={24} />
-          </button>
-        )}
-        <h1 className="flex-1 text-center text-lg font-bold">
-          {view === 'category' ? `生态文化游 · ${selectedCategory?.name}` : view === 'route-detail' ? '路线详情' : view === 'search-results' ? '搜索结果' : view === 'sub-category' ? selectedSubCategory?.name : '粤美乡村'}
-        </h1>
-      </header>
+    <div className="min-h-screen bg-[#F0F2F5] flex justify-center items-center sm:py-6">
+      <div className="w-full max-w-[430px] h-screen sm:h-[844px] sm:max-h-[95vh] bg-[#F7F7F7] font-sans text-[#333] shadow-2xl relative flex flex-col sm:rounded-[48px] sm:border-[12px] sm:border-[#1A1A1A] overflow-hidden">
+        {/* Phone Notch */}
+        <div className="hidden sm:block absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-[#1A1A1A] rounded-b-2xl z-[60]"></div>
+        
+        {/* Header */}
+        <header className="sticky top-0 z-50 flex items-center bg-white px-4 py-3 pt-4 sm:pt-6 border-b border-[#EEEEEE] shrink-0">
+          {view !== 'home' && (
+            <button 
+              onClick={handleBack}
+              className="absolute left-4 p-1 hover:bg-gray-100 rounded-full transition-colors"
+            >
+              <ChevronLeft size={24} />
+            </button>
+          )}
+          <h1 className="flex-1 text-center text-lg font-bold">
+            {view === 'category' ? `生态文化游 · ${selectedCategory?.name}` : view === 'route-detail' ? '路线详情' : view === 'search-results' ? '搜索结果' : view === 'sub-category' ? selectedSubCategory?.name : '粤美乡村'}
+          </h1>
+        </header>
 
-      <main className="px-4 pb-10">
+        <main className="px-4 pb-10 flex-1 overflow-y-auto scrollbar-hide">
         <AnimatePresence mode="wait">
           {view === 'home' && (
             <motion.div
@@ -624,6 +628,7 @@ export default function App() {
 
         </AnimatePresence>
       </main>
+      </div>
     </div>
   );
 }
