@@ -168,6 +168,19 @@ export default function App() {
     { 
       name: '风景名胜', 
       icon: Palmtree, 
+      showPrice: false,
+      banners: ['https://qiniu.yuhuofei.cn/b1.png', 'https://qiniu.yuhuofei.cn/b2.png', 'https://qiniu.yuhuofei.cn/b3.png'],
+      title: '石门国家森林公园',
+      description: '广东石门国家森林公园位于广东省广州市从化区东北部，总面积2636公顷，森林覆盖率达98.9%。公园里有华南地区仅存的原始次生林1.6万亩，被称为北回归线的一片绿洲，海拔1210米高的天堂顶为广州地区高山之最。',
+      listItems: [
+        { title: '石门香雪', desc: '石门国家森林公园内著名的景观，每年冬季梅花盛开，如雪压枝头。', img: 'https://picsum.photos/seed/landscape-scenery1/200/200' },
+        { title: '红叶观赏区', desc: '广州地区著名的红叶观赏点，秋冬季节层林尽染。', img: 'https://picsum.photos/seed/shimen2/200/200' },
+        { title: '天堂顶', desc: '广州地区最高峰，登高远眺，云海翻腾。', img: 'https://picsum.photos/seed/shimen3/200/200' }
+      ]
+    },
+    { 
+      name: '非遗民俗', 
+      icon: Flag, 
       showPrice: true,
       banners: ['https://qiniu.yuhuofei.cn/bb1.png', 'https://qiniu.yuhuofei.cn/bb2.png', 'https://qiniu.yuhuofei.cn/bb3.png'],
       title: '莲麻小镇',
@@ -179,19 +192,6 @@ export default function App() {
       ]
     },
     { 
-      name: '非遗民俗', 
-      icon: Flag, 
-      showPrice: false,
-      banners: ['https://qiniu.yuhuofei.cn/b1.png', 'https://qiniu.yuhuofei.cn/b2.png', 'https://qiniu.yuhuofei.cn/b3.png'],
-      title: '石门国家森林公园',
-      description: '广东石门国家森林公园位于广东省广州市从化区东北部，总面积2636公顷，森林覆盖率达98.9%。公园里有华南地区仅存的原始次生林1.6万亩，被称为北回归线的一片绿洲，海拔1210米高的天堂顶为广州地区高山之最。',
-      listItems: [
-        { title: '石门香雪', desc: '石门国家森林公园内著名的景观，每年冬季梅花盛开，如雪压枝头。', img: 'https://picsum.photos/seed/shimen1/200/200' },
-        { title: '红叶观赏区', desc: '广州地区著名的红叶观赏点，秋冬季节层林尽染。', img: 'https://picsum.photos/seed/shimen2/200/200' },
-        { title: '天堂顶', desc: '广州地区最高峰，登高远眺，云海翻腾。', img: 'https://picsum.photos/seed/shimen3/200/200' }
-      ]
-    },
-    { 
       name: '特色农产品', 
       icon: Store, 
       showPrice: false,
@@ -199,7 +199,7 @@ export default function App() {
       title: '石门国家森林公园',
       description: '广东石门国家森林公园位于广东省广州市从化区东北部，总面积2636公顷，森林覆盖率达98.9%。公园里有华南地区仅存的原始次生林1.6万亩，被称为北回归线的一片绿洲，海拔1210米高的天堂顶为广州地区高山之最。',
       listItems: [
-        { title: '石门香雪', desc: '石门国家森林公园内著名的景观，每年冬季梅花盛开，如雪压枝头。', img: 'https://picsum.photos/seed/shimen1/200/200' },
+        { title: '石门香雪', desc: '石门国家森林公园内著名的景观，每年冬季梅花盛开，如雪压枝头。', img: 'https://picsum.photos/seed/landscape-scenery1/200/200' },
         { title: '红叶观赏区', desc: '广州地区著名的红叶观赏点，秋冬季节层林尽染。', img: 'https://picsum.photos/seed/shimen2/200/200' },
         { title: '天堂顶', desc: '广州地区最高峰，登高远眺，云海翻腾。', img: 'https://picsum.photos/seed/shimen3/200/200' }
       ]
@@ -233,14 +233,14 @@ export default function App() {
     { 
       name: '美丽乡村', 
       icon: Leaf, 
-      showPrice: false,
-      banners: ['https://qiniu.yuhuofei.cn/b1.png', 'https://qiniu.yuhuofei.cn/b2.png', 'https://qiniu.yuhuofei.cn/b3.png'],
-      title: '石门国家森林公园',
-      description: '广东石门国家森林公园位于广东省广州市从化区东北部，总面积2636公顷，森林覆盖率达98.9%。公园里有华南地区仅存的原始次生林1.6万亩，被称为北回归线的一片绿洲，海拔1210米高的天堂顶为广州地区高山之最。',
+      showPrice: true,
+      banners: ['https://qiniu.yuhuofei.cn/bb1.png', 'https://qiniu.yuhuofei.cn/bb2.png', 'https://qiniu.yuhuofei.cn/bb3.png'],
+      title: '莲麻小镇',
+      description: '莲麻小镇位于广州最北端、流溪河源头。2015年纳入广州市首批特色小镇建设试点，依托东江纵队革命遗址 and 生态资源，形成集红色研学、生态旅游、客家文化于一体的乡村振兴示范区。',
       listItems: [
-        { title: '石门香雪', desc: '石门国家森林公园内著名的景观，每年冬季梅花盛开，如雪压枝头。', img: 'https://picsum.photos/seed/shimen1/200/200' },
-        { title: '红叶观赏区', desc: '广州地区著名的红叶观赏点，秋冬季节层林尽染。', img: 'https://picsum.photos/seed/shimen2/200/200' },
-        { title: '天堂顶', desc: '广州地区最高峰，登高远眺，云海翻腾。', img: 'https://picsum.photos/seed/shimen3/200/200' }
+        { title: '东江纵队从化大队旧址', desc: '作为抗日战争时期东江纵队的重要活动据点，旧址保留当年的枪械修理所、交通站等遗迹，是追寻红色足迹、重温革命历史的爱国主义教育基地。', img: 'https://qiniu.yuhuofei.cn/bblx1.png' },
+        { title: '莲麻古村', desc: '依山傍水的客家古村落，青砖黛瓦、石板巷道，保留着原汁原味的岭南乡村风貌。村中古树参天，溪水潺潺，尽显田园诗意。', img: 'https://qiniu.yuhuofei.cn/bblx2.png' },
+        { title: '莲麻酒坊', desc: '传承百年的古法酿酒作坊，以当地优质山泉 and 糯米酿制客家黄酒，酒香醇厚。游客可现场体验酿酒过程，品尝地道客家米酒。', img: 'https://qiniu.yuhuofei.cn/bblx3.png' }
       ]
     },
   ];
